@@ -1,45 +1,609 @@
-Interviewer: Hi, thanks for taking the time to chat with me today. Can you start by telling me why you cook at home?
+About SingleStoreDB Cloud Design Principles
 
-Interviewee: Sure, I love cooking at home because it's a great way for me to relax and unwind after a long day at work. Plus, it's a lot healthier and more affordable than eating out all the time.
+Sharding
 
-Interviewer: That makes sense. How do you decide what to cook?
+Query Execution
 
-Interviewee: Well, I usually plan my meals for the week ahead of time so I don't have to worry about it every day. I like to try new recipes and experiment with different ingredients, but I also stick to some of my family's favorite dishes.
+High Availability Shared Responsibility for SingleStoreDB Cloud
 
-Interviewer: How often do you cook at home?
+SingleStoreDB Cloud FAQ General Clustering Query Execution Durability Import and Backup SingleStoreDB Cloud and Spark Miscellaneous
 
-Interviewee: I cook dinner at home almost every night, but I usually only make breakfast and lunch on the weekends.
+About Workspaces
 
-Interviewer: What do you like about cooking at home?
+What is a Workspace
 
-Interviewee: I like being in control of what goes into my meals and being able to customize them to my family's preferences. It's also a great way to spend time with my kids in the kitchen.
+Workspaces Implementation
 
-Interviewer: What frustrates you when you cook at home?
+Creating and Using Workspaces
 
-Interviewee: Hmm, probably when I have to use a new appliance that I'm not familiar with. I usually just try to figure it out on my own without reading the manual, which can be frustrating if it doesn't work the way I want it to.
+Workspace Scaling
 
-Interviewer: Do you eat breakfast at home? Can you describe your breakfast preparation process?
+Migrating to Workspaces
 
-Interviewee: Yes, I usually make breakfast at home on the weekends. I like to make things like pancakes or waffles, and I always have some eggs and toast.
+SingleStoreDB Cloud Editions
 
-Interviewer: And how about dinner? Can you describe your dinner preparation process?
+SingleStoreDB Cloud Sizing Guidelines
 
-Interviewee: Sure, I usually start by marinating meat or chopping vegetables, then I'll either use the oven, stove, or slow cooker depending on the recipe. I try to make things that are quick and easy, but also flavorful and healthy.
+Sign Up to try SingleStoreDB Cloud
 
-Interviewer: Do you consider buying an additional kitchen appliance in the nearest future? Why and which appliance, if yes?
+Getting Started - Next Steps Purchase SingleStoreDB Cloud
 
-Interviewee: Yes, I've been thinking about getting an air fryer to make healthier versions of fried foods. It seems like a versatile appliance that can be used for a lot of different things.
-Interviewer: That's great! What types of cuisines do you enjoy cooking the most?
-Interviewee: I love trying out Asian and Middle Eastern recipes, but I also enjoy making classic American dishes and Italian pasta dishes.
-Interviewer: That sounds like a lot of fun. What types of domestic appliances do you currently use in your cooking?
-Interviewee: Right now, I just have a basic set up with a stove, oven, and a blender. I also have a hand mixer for baking.
-Interviewer: Are there any other appliances that you're considering buying to help with your cooking?
-Interviewee: Definitely! I've been thinking about getting a rice cooker, a slow cooker, and an immersion blender.
-Interviewer: How do you decide which appliances to buy and which recipes to make using those appliances?
-Interviewee: I usually buy appliances based on the recipes I want to make. For example, I want to make more Asian recipes that require rice, so I want to get a rice cooker. And for Middle Eastern recipes, a slow cooker would be great for making stews and tagines.
-Interviewer: How do you balance convenience with the desire to make homemade, high-quality meals?
-Interviewee: It can be a challenge, but I try to strike a balance. I want to make homemade meals that taste great, but I also don't want to spend hours in the kitchen. That's why I think appliances are so important.
-Interviewer: That makes sense. How do you plan on maintaining and cleaning your appliances?
-Interviewee: I'll make sure to follow the manufacturer's instructions for cleaning and maintenance. And I'll be careful not to overload or misuse the appliances to ensure they last as long as possible.
-Interviewer: Thank you for sharing your insights with me today. It was great to talk to you.
-Interviewee: Thanks for having me! It was fun to talk about cooking.
+Quickstart Loading Data and Running Queries
+
+Guides Augmenting Your Data Warehouse to Accelerate BI Building a New Application Designing for Multi-Tenant Applications Migrating Data from Another Database
+
+Connect to Your Workspace
+
+Client and Driver Downloads
+
+SingleStoreDB Cloud Endpoints
+
+Secure the SingleStoreDB Cloud ConnectionServer Configuration to Require Secure Client Connections
+
+Connect with Collibra Data Governance
+
+Connect with DBeaver
+
+Connect with DbVisualizer
+
+Connect with JetBrains DataGrip
+
+Connect with MySQL
+
+Connect with MySQL Client MySQL Command-Line Considerations Connect to SingleStoreDB Cloud using TLS/SSL MariaDB Command-line Client from MariaDB Server Version 10.3.12 (GPLv2)
+
+Connect with Any MySQL Compatible Tool to SingleStoreDB Cloud
+
+Connect with MySQL Workbench
+
+Connect with SQL Developer
+
+Connect with the SingleStore Client
+
+Connect with the SQL Editor Connect with Sequel Pro Connect with SQL Workbench
+
+Connect with VS Code
+
+Connect with Data API
+
+Private Connections
+
+AWS PrivateLink (Outbound)
+
+AWS PrivateLink (Inbound)
+
+Azure Private Link (Outbound)
+
+Azure Private Link (Inbound)
+
+Google Private Service Connect (Outbound)
+
+Google Private Service Connect (Inbound)
+
+Connect to Your Workspace - Related Topics
+
+Create a Database
+
+Choosing a Table Storage Type
+
+Columnstore
+
+How the Columnstore Works
+
+Writing Columnstore Data
+
+Locking in Columnstores
+
+Managing Columnstore Segments
+
+Encoded Data in Columnstores
+
+Highly Selective Joins
+
+Columnstore Sizing Estimations
+
+Universal Storage
+
+Creating a Columnstore Table
+
+Configuring the Columnstore to Work Effectively
+
+Rowstore
+
+Understanding Keys and Indexes in SingleStore
+
+Understanding Shard Key Selection
+
+Understanding Sort Key Selection
+
+Understanding How Datatype Can Affect Performance
+
+Using JSON
+
+Using Persistent Computed Columns
+
+Other Schema Concepts
+
+Detecting and Resolving Data Skew
+
+Optimizing Table Data Structures Key Considerations for Understanding Your Workload
+
+Shard Keys
+
+Choosing Rowstore Keys
+
+Choosing a Columnstore Key
+
+Specifying Unenforced Unique Constraints
+
+Integrate with SingleStoreDB Cloud
+
+Load Data
+
+Load Data from a Data Source
+
+Load Data from Amazon S3 using a Pipeline
+
+Load Data from Amazon Web Services (AWS) Load Data from AWS Glue Load Data from Amazon S3 using a Pipeline Load Data in CSV Format from Amazon S3 Using a Pipeline
+
+Load Data from Apache Beam
+
+Load Data from Microsoft Azure Load Data from Azure Blobs using a Pipeline Load Data from Azure Data Factory (ADF) Load Data from Azure Event Hubs
+
+Load Data from Data Virtuality Pipes
+
+Load Data from Google Cloud Storage (GCS) using a Pipeline Prerequisites Part 1: Creating a GCS Bucket and Adding a File Part 2: Creating a SingleStoreDB Cloud Database and GCS Pipeline Next Steps
+
+Load Data from HDFS using a Pipeline Creating and Starting an HDFS Pipeline HDFS Pipeline Scenario
+
+Load Data from HVR
+
+Load Data from Informatica PowerCenter
+
+Load Data from Kafka Securely Connect to Kafka from SingleStoreDB Cloud Load Data from the Confluent Kafka Connector Load Data from Kafka Using a Pipeline Test your Kafka Cluster using kcat (formerly kafkacat) Troubleshooting Kafka AWS Pipelines
+
+Load Data from MySQL
+
+Load Data from Qlik ReplicateUsing Qlik Replicate
+
+Load Data from Spark Getting Started Installation Configuration Settings Examples Supported Operations SQL Pushdown Parallel Read Support Data Type Conversions Security and Permissions Debugging Migrate between SingleStore Spark Connector Versions
+
+Load Data from StreamSets Prerequisites Connecting StreamSets to SingleStoreDB Cloud via Fast Loader SingleStoreDB Cloud Fast Loader vs the JDBC Connector Error and Logs Frequently Asked Questions
+
+SingleStore Replicate
+
+Migrate Schema with Flyway
+
+Transform Data with dbt
+
+Load a Type of Data Loading Geospatial Data into SingleStoreDB Cloud
+
+Example: Load TPC-H Data into SingleStoreDB Cloud What is TPC-H? Before You Begin Create the Database Load Data with Pipelines Verify Pipeline Success Run Queries on Data
+
+Load and Analyze AdTech Data
+
+Load Data with Pipelines
+
+Pipeline Data Sources and Formats Supported Data Sources Supported File Formats
+
+The Lifecycle of a Pipeline
+
+Parallelized Data Extraction with Pipelines Data Loading for Azure Blob Pipelines Data Loading for HDFS Pipelines Data Loading for Kafka Pipelines Data Loading for S3 Pipelines Pipelines Scheduling
+
+Data Shaping with PipelinesMethods for Data Shaping with Pipelines
+
+Avro Schema Evolution with Pipelines Order of Operations for Updating an Avro Schema and its Associated Database Objects Connecting to Confluent Schema Registry over SSL Schema Registry Configuration Options Schema Evolution Examples
+
+Pipeline Procedures Detect and Address Slow Performance and High Memory Usage of Pipelines View and Handle Pipeline Errors Writing Efficient Stored Procedures for Pipelines
+
+Load Data - Related Topics
+
+Query Data
+
+Connect with Analytics and BI Tools
+
+Connect with Cognos Analytics
+
+Connect with Dremio Data Reflection and Query Acceleration Best practices guide
+
+Connect with Looker
+
+Connect with MicroStrategy
+
+Connect with Power BI Data Connectivity Modes Connect Power BI Desktop to SingleStoreDB Connect Power BI Service to SingleStoreDB via Power BI Gateway
+
+Connect with Sisense
+
+Connect with Tableau Connect with Tableau Desktop Connect with Tableau Prep Connect with Tableau Server
+
+Connect with Tibco Spotfire
+
+Code Generation
+
+Row Locking
+
+Flexible Parallelism Basic Query Examples
+
+Performing Upserts
+
+Read Query Results in Parallel
+
+Run UPDATEs and DELETEs as Distributed Transactions
+
+Query Tuning
+
+Testing Your Queries and Performance
+
+Troubleshooting Poorly Performing Queries
+
+Statistics and Sampling
+
+Statistics and Sampling Concepts
+
+Statistics and Sampling Tasks
+
+SingleStoreDB Visual Explain Using Visual Explain Metrics Displayed by Visual Explain Example
+
+Manage Data
+
+Database Storage
+
+Attach an Unlimited Storage Database Using Point-in-Time Recovery (PITR)
+
+Online Point-in-Time Recovery (PITR) Rename an Unlimited Storage Database
+
+Benefits of Unlimited Storage
+
+Back Up and Restore Data Backup Data Backup and Restore on S3, Azure or GCS Items Included in and Excluded from a Backup Backup Information Schema Tables Clearing Backup History Lock-free Backups
+
+Export Data Exporting a Single Database Exporting All Databases
+
+Moving DataMoving Data Between Databases
+
+Developer Resources
+
+Try SingleStoreDB Cloud for FreeSign Up to try SingleStoreDB Cloud
+
+Connect with Application Development Tools Connect with C/C++
+
+Connect with Go
+
+Connect with Java/JDBCThe SingleStore JDBC Driver
+
+Connect with Node.jsConnect with Node.js using SSL
+
+Connect with Laravel
+
+Connect with .NET and .NET Core
+
+Connect with ODBCThe SingleStore ODBC Driver
+
+Connect with Perl
+
+Connect with PHP
+
+Connect with Python Connect using the SingleStoreDB Python Client Connect with SQLAlchemy Supported Python Libraries
+
+Connect with Ruby
+
+Connect with Rust Using Prepared Statements
+
+Notebooks
+
+Using Notebooks
+
+Develop with Notebooks
+
+Connect with Data API Connect with Management API
+
+Porting Tables to SingleStoreDB Cloud Shard keys Choosing a Shard Key
+
+Concurrent Multi-Insert Examples Bash C C# / .NET Core Java Node.js Python
+
+Unsupported MySQL Features
+
+Transition from MySQL to SingleStoreDB Cloud Migrating Data with mysqldump Transitioning Your Application
+
+Functional Extensions
+
+Analyzing Time Series Data
+
+Working with Full-Text Search
+
+Working with Geospatial Features
+
+Working with Window Functions
+
+Procedural Extensions Control Flow Additional Data Types Stored Procedures User-Defined Scalar-Valued Functions (UDFs) User-Defined Table-Valued Functions (TVFs) User-Defined Aggregate Functions (UDAFs) External Functions Static Parameterized SQL
+
+Dynamic SQL Example Dynamic SQL Use Cases Writing Dynamic SQL
+
+Procedural Extensions Security
+
+See Also
+
+User and Workspace Administration
+
+Manage Organizations
+
+Manage Organization Users
+
+Manage Workspaces
+
+Manage Database Users
+
+Use the Workload Manager and Set Resource Limits
+
+Use the Workload Manager
+
+Set Resource Limits Resource Pool Basics Work with Resource Pool Engine Variables Administer Default Resource Pools Select a Resource Pool Dynamically
+
+FAQs
+
+Workspace Health and Performance Active Queries
+
+Monitoring
+
+Workload Profiling
+
+Billing and Usage Flexible Usage Model
+
+Connect with Management API
+
+Security
+
+Privacy
+
+Authentication
+
+Authenticate via JWT
+
+Authenticate with SSO Authenticate via Browser-based SSO using JWTs Configure SingleStore SSO using Azure AD Configure SingleStore SSO using Okta Configure SingleStore SSO using PingOne Troubleshoot SSO Connections
+
+Configuring a Password Policy
+
+Configuring and Using Connection Links
+
+IP Address Allowlisting
+
+Administration
+
+Role-Based Access Control (RBAC) Guide
+
+Row-Level Security (RLS) Deployment Guide
+
+Encryption Customer Managed Encryption KeysCloud Key Management Service for AWS Volume Encryption
+
+Audit Logging
+
+Forwarding Audit Logs
+
+Audit Logging Levels
+
+Disaster Recovery
+
+Reference
+
+Configuration Reference AVX2 Instruction Set Verification
+
+Engine Variables Engine Variables List of Engine Variables Assigning Expressions to Variables Reserved Engine Variables
+
+System Limits
+
+Information Schema Reference Information Schema View List Accessing the Information Schema
+
+Examples
+
+Backup and RestoreMV_RECOVERY_STATUS
+
+Workspace Component AGGREGATORS CHARACTER_SETS COLLATIONS COLLATION_CHARACTER_SET_APPLICABILITY COLUMNS DISTRIBUTED_DATABASES DISTRIBUTED_DATABASES_ON_SITES DISTRIBUTED_PARTITIONS LEAVES MV_CACHED_BLOBS MV_CLUSTER_STATUS MV_DISTRIBUTED_DATABASES_STATUS MV_EVENTS MV_HOSTS_INFORMATION PARAMETERS ROUTINES SCHEMATA SITES TABLES TABLE_CONSTRAINTS VIEWS
+
+Management MV_AGGREGATED_COLUMN_USAGE MV_AGGREGATED_REPLICATION_STATUS MV_BLOCKED_QUERIES MV_COLLECTED_ROW_CHANGE_COUNTS MV_FINISHED_TASKS MV_GLOBAL_STATUS MV_GLOBAL_VARIABLES MV_NODES MV_QUERIES MV_QUERY_COLUMN_USAGE MV_ROW_CHANGE_COUNTS MV_SYSINFO_CPU MV_SYSINFO_CPULIST MV_SYSINFO_DISK MV_SYSINFO_MEM MV_SYSINFO_NET
+
+Query Performance, Workload Management, and Statistics ADVANCED_HISTOGRAMS AGGREGATE_FUNCTIONS COLUMN_STATISTICS INDEX_STATISTICS LMV_JOIN_OPTIMIZATION_RESULTS information_schema.LMV_LOCAL_DATABASES LMV_PROFILE_STATS MV_BACKUP_HISTORY MV_BACKUP_STATUS MV_BT MV_PLANCACHE MV_PROCESSLIST MV_PROSPECTIVE_HISTOGRAMS MV_QUERY_PROSPECTIVE_HISTOGRAMS MV_WORKLOAD_MANAGEMENT_STATUS OPTIMIZER_STATISTICS PLANCACHE RANGE_STATISTICS STATISTICS TABLE_STATISTICS and INTERNAL_TABLE_STATISTICS USER_VARIABLES
+
+Pipelines PIPELINES PIPELINES_BATCHES_SUMMARY PIPELINES_BATCHES PIPELINES_ERRORS PIPELINES_CURSORS PIPELINES_FILES
+
+Replication Management LMV_REPLICATION_STATUS MV_REPLICATION_STATUS MV_REPLICATION_MANAGEMENT_ORPHANS_STATE MV_REPLICATION_MANAGEMENT_PARTITIONS_STATE MV_REPLICATION_MANAGEMENT_REF_DB_STATE MV_REPLICATION_MANAGEMENT_STATE
+
+Resource and User Management AVAILABILITY_GROUPS CURRENT_USER_GROUPS CURRENT_USER_ROLES GROUP_PRIVILEGES GROUPS_ROLES MV_RESOURCE_POOL_STATUS RESOURCE_POOLS ROLE_PRIVILEGES SCHEMA_PRIVILEGES TABLE_PRIVILEGES USER_PRIVILEGES USERS USERS_GROUPS
+
+Segment, Column, and Merge Status COLUMNAR_SEGMENTS IND_CS_PARTITION_ROW_SEGMENT_GROUPS KEY_COLUMN_USAGE MV_COLUMNAR_SEGMENT_INDEX MV_COLUMNSTORE_FILES MV_COLUMNSTORE_MERGE_STATUS MV_REBALANCE_STATUS MV_ROW_CHANGE_COUNTS
+
+Unlimited Storage MV_BOTTOMLESS_API_EVENTS MV_BOTTOMLESS_STATUS MV_BOTTOMLESS_STATUS_EXTENDED MV_BOTTOMLESS_SUMMARY MV_MILESTONES
+
+Workload Profiling Concepts and Terminology MV_ACTIVITIES MV_ACTIVITIES_CUMULATIVE MV_ACTIVITIES_EXTENDED MV_ACTIVITIES_EXTENDED_CUMULATIVE MV_QUERY_ACTIVITIES MV_QUERY_ACTIVITIES_EXTENDED_CUMULATIVE MV_TASKS Management Statistics Reference
+
+SQL Reference
+
+SQL Command Syntax
+
+SQL Commands List SQL Functions List
+
+Comparison Operators and Functions BETWEEN, NOT BETWEEN NULL Handling LIKE, NOT LIKE IN(), NOT IN() strcmp() Where operators can be used Using Comparison Operators with Date and Time Functions
+
+Database Object Case-Sensitivity
+
+Data Types Integer Numbers Real Numbers Time and Date String Types BLOB Types JSON Type Geospatial Types SingleStoreDB Cloud (MemSQL) Procedural SQL (MPSQL) Types Other Types Comparing mismatched datatypes Data Type Conversion
+
+Character Encoding Character Sets Supported Collations Supported Implicit Collation in Special Cases
+
+Operations that Take Either a Database or a Workspace Level Lock Database Level Locks Workspace Level Locks Operations that Take Database Level Locks Operations that Take Workspace Level Locks
+
+User-Defined Variables SELECT ... INTO User Defined Variable SET
+
+Restricted Keywords Escaping Restricted Keywords List of Restricted Keywords
+
+Aggregate Functions ANY_VALUE APPROX_COUNT_DISTINCT APPROX_PERCENTILE AVG BIT_AND BIT_OR BIT_XOR COUNT GROUP_CONCAT MAX MEDIAN MIN MOD STD STDDEV STDDEV_POP STDDEV_SAMP SUM VARIANCE VAR_SAMP
+
+Workspace Management Commands Node Requirements for SingleStoreDB Cloud Commands Leaf States EXPLAIN RESTORE REDUNDANCY FILL and FLUSH CONNECTION POOLS FLUSH HOSTS SHOW AGGREGATORS TRIGGER GC
+
+Code Generation FunctionsNOPARAM
+
+Conditional Functions CASE COALESCE CAST or CONVERT DECODE ELT GREATEST IF ISNULL ISNUMERIC LEAST NULLIF NVL and IFNULL SLEEP
+
+Data Definition Language DDL ALTER DATABASE ALTER TABLE ALTER VIEW CREATE DATABASE CREATE INDEX CREATE MILESTONE CREATE TABLE CREATE VIEW DESCRIBE DROP DATABASE DROP INDEX DROP … FROM PLANCACHE DROP TABLE DROP VIEW FLUSH TABLES OPTIMIZE TABLE TRUNCATE UNLOCK TABLES
+
+Data Manipulation Language DML AGGREGATOR SYNC AUTO_INCREMENT BEGIN CLEAR LOAD ERRORS COMMIT CUBE and ROLLUP DELETE EXCEPT and MINUS EXISTS AND NOT EXISTS EXPLAIN INSERT INTERSECT LOAD DATA PROFILE PIVOT REPLACE ROLLBACK SELECT TABLE UNION UPDATE USE WITH (Common Table Expressions) Materializing Common Table Expressions Query Plan Operations
+
+Date and Time Functions ADDTIME CONVERT_TZ CURRENT_DATE And CURDATE CURRENT_TIME And CURTIME CURRENT_TIMESTAMP DATE DATEDIFF DATE_ADD DATE_FORMAT DATE_SUB DATE_TRUNC DAY DAYNAME DAYOFWEEK DAYOFYEAR EXTRACT FROM_DAYS FROM_UNIXTIME GET_FORMAT HOUR LAST_DAY LOCALTIMESTAMP MICROSECOND MINUTE MONTH MONTHNAME MONTHS_BETWEEN NOW QUARTER SECOND SEC_TO_TIME STR_TO_DATE TIME TIMEDIFF TIMESTAMP TIMESTAMPADD TIMESTAMPDIFF TIME_FORMAT TIME_TO_SEC TO_CHAR TO_DATE TO_DAYS TO_SECONDS TO_TIMESTAMP TRUNC UNIX_TIMESTAMP UTC_DATE UTC_TIME UTC_TIMESTAMP WEEK WEEKDAY YEAR
+
+Distinct Count Estimation Functions Using Distinct Count Estimation Functions APPROX_COUNT_DISTINCT APPROX_COUNT_DISTINCT_ACCUMULATE APPROX_COUNT_DISTINCT_COMBINE APPROX_COUNT_DISTINCT_ESTIMATE
+
+Full-Text Search Functions HIGHLIGHT MATCH
+
+Geospatial Functions APPROX_GEOGRAPHY_INTERSECTS GEOGRAPHY_AREA GEOGRAPHY_CONTAINS GEOGRAPHY_DISTANCE GEOGRAPHY_INTERSECTS GEOGRAPHY_LATITUDE GEOGRAPHY_LENGTH GEOGRAPHY_LONGITUDE GEOGRAPHY_POINT GEOGRAPHY_WITHIN_DISTANCE
+
+Identifier Generation FunctionsSYS_GUID and UUID
+
+Information Functions CONNECTION_ID DATABASE ESTIMATED_QUERY_LEAF_MEMORY ESTIMATED_QUERY_RUNTIME FOUND_ROWS LAST_INSERT_ID ROW_COUNT USER
+
+JSON Functions JSON_AGG JSON_ARRAY_CONTAINS_<type> JSON_ARRAY_PUSH_<type> JSON_BUILD_OBJECT JSON_DELETE_KEY JSON_EXTRACT_<type> JSON_GET_TYPE JSON Keypaths JSON_KEYS JSON_LENGTH JSON_MATCH_ANY JSON_PRETTY JSON_SET_<type> JSON_SPLICE_<type> JSON_TO_ARRAY TO_JSON
+
+Numeric Functions ABS SIGN EXP ACOS ASIN ATAN ATAN2, ATAN BIT_COUNT bitwise AND (&) bitwise NOT (~) bitwise OR (|) bitwise XOR (^) bitwise left shift (<<) bitwise right shift (>>) CEIL CONV COS COT LN LOG2 LOG10 DEGREES FLOOR LOG PI POW RADIANS RAND ROUND SIGMOID SIN SQRT TAN TO_NUMBER TRUNC TRUNCATE
+
+Operational Commands ANALYZE ATTACH DATABASE BACKUP DATABASE CHECK BLOB CHECKSUM CHECK BOTTOMLESS CHECKSUM DETACH DATABASE KILL CONNECTION KILLALL QUERIES REPAIR DATABASE RESTORE DATABASE SELECT GLOBAL SET and SET SESSION SET AGGREGATOR SET CLUSTER SET GLOBAL SET LEAF SHOW REPLICATION STATUS Replication Distribution Tree SNAPSHOT DATABASE SYNC BOTTOMLESS DATABASE
+
+Pipelines Commands ALTER PIPELINE CREATE PIPELINE CREATE PIPELINE ... INTO PROCEDURE CREATE PIPELINE ... WITH TRANSFORM Additional CREATE PIPELINE Examples DETACH PIPELINE DROP PIPELINE PROFILE PIPELINE START PIPELINE STOP PIPELINE TEST PIPELINE
+
+Procedural SQL Reference Anonymous Code Blocks Control Flow Statements Exceptions and Exception Handling MySQL Client Delimiters Transactions in Stored Procedures CREATE AGGREGATE CREATE [OR REPLACE] EXTERNAL FUNCTION CREATE FUNCTION (UDF) CREATE FUNCTION (TVF) CREATE PROCEDURE CREATE [OR REPLACE] TEMPORARY PROCEDURE … DROP FUNCTION DROP PROCEDURE DROP AGGREGATE SHOW AGGREGATES SHOW CREATE FUNCTION SHOW CREATE AGGREGATE SHOW FUNCTIONS SHOW PROCEDURES ARRAY CALL CREATE_ARRAY COLLECT ECHO ECHO SELECT EXECUTE IMMEDIATE INSERT_ALL RECORD ROW QUERY SCALAR TO_QUERY
+
+Regular Expression Functions Using Regular Expression Commands REGEXP_INSTR REGEXP_REPLACE REGEXP_SUBSTR RLIKE and REGEXP
+
+Resource Pool Commands ALTER RESOURCE POOL CREATE RESOURCE POOL DROP RESOURCE POOL SHOW RESOURCE POOLS
+
+Security Management Commands ALTER USER CREATE GROUP CREATE LINK CREATE ROLE CREATE USER CURRENT_SECURITY_GROUPS CURRENT_SECURITY_ROLES CURRENT_USER DROP GROUP DROP LINK DROP ROLE DROP USER GRANT GRANT GROUP GRANT ROLE REVOKE REVOKE GROUP REVOKE ROLE SECURITY_LISTS_INTERSECT SET PASSWORD SHOW GRANTS SHOW GROUPS SHOW GROUPS FOR ROLE SHOW GROUPS FOR USER SHOW LINKS SHOW ROLES SHOW ROLES FOR GROUP SHOW ROLES FOR USER SHOW USERS SHOW USERS FOR GROUP SHOW USERS FOR ROLE Permissions Matrix Default Mode Permissions Changes Strict Mode Permissions
+
+SHOW Commands SHOW CREATE PIPELINE SHOW COLUMNS SHOW CREATE TABLE SHOW CREATE VIEW SHOW DATABASES SHOW DATABASE STATUS SHOW ERRORS SHOW GLOBAL STATUS SHOW INDEX, SHOW INDEXES, SHOW KEYS SHOW INDEXES SHOW KEYS SHOW LOAD ERRORS SHOW LOAD WARNINGS SHOW PARTITIONS SHOW PIPELINES SHOW PLAN SHOW PLANCACHE SHOW PROCESSLIST SHOW REPRODUCTION SHOW SCHEMAS SHOW SESSION STATUS SHOW STATUS EXTENDED SHOW TABLE STATUS SHOW TABLES SHOW VARIABLES SHOW WARNINGS System Status
+
+String Functions AES_DECRYPT AES_ENCRYPT ASCII BIN BINARY CHAR CHARACTER_LENGTH CHARSET CONCAT CONCAT_WS CRC32 FIELD FORMAT FROM_BASE64 QUOTE HEX INET_ATON INET_NTOA INET6_ATON INET6_NTOA INITCAP INSTR LCASE LEFT LENGTH LOCATE LPAD LTRIM MD5 REPLACE REVERSE RIGHT RPAD RTRIM SECRET SHA1 SHA2 SPLIT STRING_BYTES SUBSTRING SUBSTRING_INDEX TO_BASE64 TRIM UCASE UNHEX
+
+Time Series Functions FIRST LAST TIME_BUCKET
+
+Vector Functions Using Vector Functions DOT_PRODUCT EUCLIDEAN_DISTANCE JSON_ARRAY_PACK JSON_ARRAY_UNPACK SCALAR_VECTOR_MUL VECTOR_ADD VECTOR_ELEMENTS_SUM VECTOR_KTH_ELEMENT VECTOR_MUL VECTOR_NUM_ELEMENTS VECTOR_SORT VECTOR_SUB VECTOR_SUM VECTOR_SUBVECTOR
+
+Window Functions DENSE_RANK FIRST_VALUE LAG LAST_VALUE LEAD NTH_VALUE NTILE PERCENT_RANK PERCENTILE_CONT and MEDIAN PERCENTILE_DISC RANK ROW_NUMBER
+
+Troubleshooting Reference
+
+Network Errors
+
+Operations Errors
+
+Pipeline Errors Detect and Address Slow Performance and High Memory Usage of Pipelines View and Handle Pipeline Errors
+
+Query Errors ERROR 2408 (HY000): ER_COMPILATION_TIMEOUT: Query compilation timed out and cannot be executed ERROR 1064 ER_PARSE_ERROR: Unhandled exception Type: ER_PARSE_ERROR (1064) ERROR 1205 (HY000): Lock wait timeout exceeded; try restarting transaction ERROR 1706 (HY000): Feature “Multi-table UPDATE/DELETE with a reference table as target table” is not supported by MemSQL ERROR 1706 (HY000): Leaf Error (127.0.0.1:3307): Feature “INSERT IGNORE … ON DUPLICATE KEY UPDATE” is not supported by MemSQL Why do I get errors about UNIQUE KEYs?
+
+System Databases Master Aggregator High Availability After Availability Zone Failure
+
+Data API Data API Authentication Access the Data API
+
+Enable the Data API
+
+Data API Data Type Conversion
+
+Data API Error Handling
+
+Data API Endpoint Reference exec jwks_setup ping query/rows query/tuples spec
+
+Management APIAPI Reference
+
+Code Engine - Powered by Wasm
+
+Create Wasm UDFs
+
+Create Wasm TVFs
+
+Release Notes
+
+SingleStoreDB Cloud Release Notes
+
+8.0 Release Notes Maintenance Release Changelog
+
+7.9 Maintenance Release Changelog (Cloud Only)
+
+7.8 Release Notes Maintenance Release Changelog
+
+7.6 Release Notes Maintenance Release Changelog
+
+7.5 Release Notes Maintenance Release Changelog
+
+7.3 Release Notes
+
+7.3 Release Highlights
+
+Maintenance Release Changelog
+
+7.1 Release Notes
+
+Release Highlights
+
+Additional Features and Improvements in this Release
+
+Maintenance Release Changelog
+
+7.0 Release Notes Release Highlights Query Execution Query Optimization Data Storage, Loading, and Backup System Management Functional Extensions
+
+Maintenance Release Changelog
+
+Documentation Changelog 2022-04-01 2021-10-01 2021-07-01 2021-03-01 2021-02-01 2021-01-19
+
+Support
+
+SingleStoreDB Cloud Scheduled Updates
+
+SingleStoreDB Cloud Status
+
+SingleStore Support FAQ
+
+How Support Works
+
+What is the End of Life (EOL) Policy for SingleStore Software?
+
+Obtain Help and Support
+
+print
+
+Toggle navigation
+
+SingleStoreDB Cloud Getting Started with SingleStoreDB Cloud About SingleStoreDB Cloud
+
+Prev Next
+
+About SingleStoreDB Cloud
+
+SingleStoreDB Cloud is a distributed, relational database with optimized speed and scalability to support data-intensive and real-time applications. Key Features of SingleStoreDB Cloud Speed and Scalability
+
+Maximum Performance: An optimized query engine and modern architecture allow SingleStoreDB to process complex transactional (OLTP) and analytical (OLAP) workloads at record speeds. High Scalability: Infinite elasticity enables you to easily scale your applications, while offering separation of storage and compute.
+
+Fully Multi-cloud Database As a fully multi-cloud database, SingleStoreDB gives you complete control over where you deploy and run your environment thereby avoiding vendor lock-in. Simplicity and Connectability
+
+SQL: SingleStoreDB features familiar SQL tooling and is MySQL wire protocol compatible, thereby eliminating the need for specialized databases and simplifies your application architecture. Connectors: SingleStoreDB includes connectors for common languages, frameworks, and tools. Multi-Model: SingleStoreDB supports multiple data types including JSON, time-series, geospatial and full-text search. API-Driven: Designed for developers, SingleStoreDB features API-driven workflows and direct integrations to support serverless application development.
+
+Enterprise Security Protocols
+
+Secure-by-Design: Backed by reliable end-to-end encryption, SingleStoreDB empowers users to select a secure method of authentication and authorization best suited for your enterprise.  Enterprise Compliance: SingleStoreDB has industry-leading security certifications including ISO/IEC 27001, SOC Type 2, and Privacy Shield. It is also fully compliant with CCPA, GDPR, and HIPAA requirements. Secure Integration: SingleStoreDB allows secure, permitted authorization from web, mobile and desktop applications through security tools like Okta, Ping, and Azure AD (AAD).
+
+How SingleStoreDB Cloud Works Additional Information Quickstart: Loading Data and Running Queries - walks you through using the Portal to create a database, load sample data quickly, and then run some queries against that data. Designing for Multi-tenant Applications - explains the various models and trade-offs available for a multi-tenancy SaaS application. Visit https://www.singlestore.com/cloud/ for more information about SingleStoreDB Cloud. In this section:
+
+About SingleStoreDB Cloud How SingleStoreDB Cloud Works Additional Information
+
+Search results
+
+No results found
+
+Was this helpful?
+
+YesNo
+
+Would you like to provide feedback? Just click here to suggest edits.
+
+Prev Next
+
+© 2023 SingleStore
+
+Last modified: November 22, 2022
+
+Singlestore CEO is Raj verma
+
+Publication date:
